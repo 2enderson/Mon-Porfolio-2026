@@ -1,21 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <div class="progress-bar" id="progress-bar"></div>
     <header>
-        <div>
-            <a href="">Mon Portfolio</a>
+        <div class="logo-section">
+            <img src="image/chris.jpg" alt="chris" class="logo-avatar">
+            <a href="index.html">Mon Portfolio</a>
         </div>
-        <nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu de navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav-menu" class="nav-menu">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="projets.html">Projets</a></li>
@@ -24,17 +38,94 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Basculer le thème sombre" title="Dark mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
     </header>
     <main>
-        <h1>mes divertissement</h1>
+        <section class="ent-container">
+            <h1>Pause & Détente</h1>
+        
+            <div class="grid-ent">
+        
+                <!-- Carte 1 -->
+                <div class="card-ent">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d" alt="Musique">
+        
+                    <div class="card-content">
+                        <h3>Playlist du moment</h3>
+                        <p>Principalement du Jazz pour la concentration et de l'Afrobeats pour l'énergie. La musique est mon moteur créatif.</p>
+        
+                        <div class="tags">
+                            <span>Jazz</span>
+                            <span>Afrobeats</span>
+                        </div>
+        
+                        <div class="card-links">
+                            <a href="#"><i class="fa-solid fa-headphones"></i> Écouter</a>
+                            <a href="#"><i class="fa-solid fa-share"></i> Partager</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Carte 2 -->
+                <div class="card-ent">
+                    <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba" alt="Films">
+        
+                    <div class="card-content">
+                        <h3>Séries & Films</h3>
+                        <p>Grand fan de science-fiction et de documentaires technologiques. Rien ne bat un bon scénario bien ficelé.</p>
+        
+                        <div class="tags">
+                            <span>Sci-Fi</span>
+                            <span>Documentaire</span>
+                        </div>
+        
+                        <div class="card-links">
+                            <a href="#"><i class="fa-solid fa-film"></i> Voir</a>
+                            <a href="#"><i class="fa-solid fa-star"></i> Favoris</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Carte 3 -->
+                <div class="card-ent">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Lecture">
+        
+                    <div class="card-content">
+                        <h3>Lectures</h3>
+                        <p>Livres sur le développement personnel et l'entrepreneuriat. Passion pour l'innovation et les idées nouvelles.</p>
+        
+                        <div class="tags">
+                            <span>Business</span>
+                            <span>Mindset</span>
+                        </div>
+        
+                        <div class="card-links">
+                            <a href="#"><i class="fa-solid fa-book"></i> Lire</a>
+                            <a href="#"><i class="fa-solid fa-bookmark"></i> Sauvegarder</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
     </main>
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Retour au haut de la page" title="Retour au haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <footer>
-        <p>&copy; 2026 Chris.Tous droits réservés.</p>
+        <p>&copy; 2026 chris. Tous droits réservés.</p>
         <div>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/mario-majila" target="_blank" rel="noopener noreferrer"
+                aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Profil Twitter"><i
+                    class="fa-brands fa-x-twitter"></i></a>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
